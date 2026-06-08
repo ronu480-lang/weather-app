@@ -1,0 +1,54 @@
+.body{
+    background-image: url("image.png");
+
+}
+.container{
+    background-color: white;
+    width: 40vw;
+    height: 70vh;
+    text-align: center;
+    margin-left: 30vw;
+    margin-top: 5vw;
+    border: 5px solid white ; 
+    border-radius: 3vw;
+    border-radius: 3vw; 
+    box-shadow: 2px 2px 10px blue; 
+}
+*{
+    margin: 0;
+}
+.Search{
+   width:55% ;
+   height:25px ;
+   border-radius: 6px;
+ 
+  
+}
+.button{
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    width: 65px;
+    height: 31px;
+    border-radius: 6px;
+    margin-left: 2%;
+}
+.result{
+    margin-top: 0.2vw;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    white-space: pre-line;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+button {
+  background-color: skyblue;
+  color: black;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+}
