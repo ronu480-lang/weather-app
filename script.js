@@ -24,15 +24,43 @@ async function getWeather() {
             return;
         }
 
-        result.innerHTML = `
-            <h2>${data.name}</h2>
-            <p>🌡️ Temperature: ${data.main.temp} °C</p>
-            <p>🙂 Feels Like: ${data.main.feels_like} °C</p>
-            <p>💧 Humidity: ${data.main.humidity}%</p>
-            <p>🌬️ Wind Speed: ${data.wind.speed} m/s</p>
-            <p>☁️ Cloud Coverage: ${data.clouds.all}%</p>
-            <p>🌤️ Weather: ${data.weather[0].main}</p>
-        `;
+       result.innerHTML = `
+    <h2>${data.name}</h2>
+
+    <div class="weather-cards">
+
+        <div class="card">
+            <p>🌡️ Temperature</p>
+            <h3>${data.main.temp} °C</h3>
+        </div>
+
+        <div class="card">
+            <p>🙂 Feels Like</p>
+            <h3>${data.main.feels_like} °C</h3>
+        </div>
+
+        <div class="card">
+            <p>💧 Humidity</p>
+            <h3>${data.main.humidity}%</h3>
+        </div>
+
+        <div class="card">
+            <p>🌬️ Wind Speed</p>
+            <h3>${data.wind.speed} m/s</h3>
+        </div>
+
+        <div class="card">
+            <p>☁ Cloud Coverage</p>
+            <h3>${data.clouds.all}%</h3>
+        </div>
+
+        <div class="card">
+            <p>🌤️ Weather</p>
+            <h3>${data.weather[0].main}</h3>
+        </div>
+
+    </div>
+`;
 
     } catch (error) {
         result.innerHTML = "Something went wrong";
